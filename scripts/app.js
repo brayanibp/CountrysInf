@@ -102,7 +102,7 @@ function runArray(arr) {
     for (let i in arr) {
         if (arr.hasOwnProperty('symbol')){
             strVal += `<li> <b>Name:</b> ${arr[i].name} <b>Symbol:</b> ${arr[i].symbol} </li>`;
-        } else if(arr.hasOwnProperty('iso639_2')) {
+        } else if(arr[i].hasOwnProperty('iso639_2')) {
             strVal += `<li> <b>Name:</b> ${arr[i].name} <b>Native Name:</b> ${arr[i].nativeName} </li>`;
         } else {
             strVal += `<li>${arr[i]}</li>`;
