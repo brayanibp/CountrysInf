@@ -102,6 +102,8 @@ function runArray(arr) {
     for (let i in arr) {
         if (arr.hasOwnProperty('symbol')){
             strVal += `<li> <b>Name:</b> ${arr[i].name} <b>Symbol:</b> ${arr[i].symbol} </li>`;
+        } else if(arr.hasOwnProperty('iso639_2')) {
+            strVal += `<li> <b>Name:</b> ${arr[i].name} <b>Native Name:</b> ${arr[i].nativeName} </li>`;
         } else {
             strVal += `<li>${arr[i]}</li>`;
         }
@@ -154,6 +156,9 @@ function outputView(str){
         </tr>
         <tr>
             <td class="left">Currencies</td><td class="right">${runArray(data.currencies)}</td> 
+        </tr>
+        <tr>
+            <td class="left">Languages</td><td class="right">${runArray(data.languages)}</td>
         </tr>
         <tr>
             <td class="left">Translations</td>
