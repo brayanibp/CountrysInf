@@ -95,7 +95,7 @@ function runArray(arr) {
         if (arr[0].hasOwnProperty('symbol')){
             return `<li> <b>Name:</b> ${arr[0].name} <b>Symbol:</b> ${arr[0].symbol} </li>`;
         } else if(arr[0].hasOwnProperty('iso639_2')) {
-            strVal += `<li> <b>Name:</b> ${arr[i].name} <b>Native Name:</b> ${arr[i].nativeName} </li>`;
+            return `<li> <b>Name:</b> ${arr[0].name} <b>Native Name:</b> ${arr[0].nativeName} </li>`;
         } else {
             return arr[0];
         }
