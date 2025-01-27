@@ -1,6 +1,7 @@
 function loadCountry() {
     $.ajax({
-        url: "https://api.countrylayer.com/v2/all",
+        url: "https://api.countrylayer.com/v2/all?access_key=2326facb02707b25d3aba84241b1325c
+",
         type: 'GET',
         dataType: "JSON",
         success : function(res) {         
