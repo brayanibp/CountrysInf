@@ -1,6 +1,6 @@
 function loadCountry() {
     $.ajax({
-        url: "https://restcountries.eu/rest/v2/all",
+        url: "https://api.countrylayer.com/v2/all",
         type: 'GET',
         dataType: "JSON",
         success : function(res) {         
